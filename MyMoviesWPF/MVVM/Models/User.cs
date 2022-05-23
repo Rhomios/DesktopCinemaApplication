@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace MyMoviesWPF
+namespace MyMoviesWPF.Models
 {
     public partial class User
     {
