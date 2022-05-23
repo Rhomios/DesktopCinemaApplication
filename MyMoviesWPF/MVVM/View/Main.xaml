@@ -20,29 +20,20 @@
             <ColumnDefinition Width="139*"/>
             <ColumnDefinition Width="485*"/>
             <ColumnDefinition Width="176*"/>
-
-
         </Grid.ColumnDefinitions>
-        <StackPanel Grid.Column="1" Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center">
-            <Button Height="150" Width="100" VerticalAlignment="Center" Cursor="Hand"/>
-            <DataGrid HorizontalAlignment="Center"/>
-            <Button Height="150" Width="100"/>
-        </StackPanel>
 
-        <StackPanel Grid.Column="2" Margin="0,10,0,10" Orientation="Vertical" HorizontalAlignment="Center" Width="350">
-            <StackPanel Height="35" Orientation="Horizontal">
-                <Button Width="175" Content="Регистрация"/>
-                <Button Width="175" Content="Вход"/>
-            </StackPanel>
-            <StackPanel Height="35" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Bottom">
-                <Button Style="{DynamicResource MaterialDesignRaisedSecondaryDarkButton}" Width="175" Content="Корзина" Cursor="Hand" />
-            </StackPanel>
-        </StackPanel>
-        <StackPanel Grid.Column="1" Orientation="Horizontal" Margin="0,10,0,0" HorizontalAlignment="Center" Width="824">
+
+        <ContentControl 
+                HorizontalAlignment="Center" VerticalAlignment="Top" Grid.Column="2"
+                Content="{Binding CurrentToolbar}" Margin="0,10,0,0"
+                />
+
+
+        <!--<StackPanel Grid.Column="1" Orientation="Horizontal" Margin="0,10,0,0" HorizontalAlignment="Center" Width="824">
             <TextBox Width="765" Height="50" 
                      Style="{DynamicResource MaterialDesignOutlinedTextBox}"  BorderBrush="{DynamicResource MaterialDesignBodyLight}" materialDesign:HintAssist.Hint="ПОИСК" BorderThickness="1.5" />
             <Button Width="58" Height="50" />
-        </StackPanel>
+        </StackPanel>-->
 
     </Grid>
 </Window>

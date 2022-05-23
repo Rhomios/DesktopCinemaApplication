@@ -11,6 +11,11 @@
                 <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/Themes/Recommended/Accent/MaterialDesignColor.Purple.xaml" />
             </ResourceDictionary.MergedDictionaries>
 
-        </ResourceDictionary>          
+        </ResourceDictionary>
+        <!--<DataTemplate DataType="{x:Type viewModel:WaiterControl_ViewModel}">
+            <View:WaiterControl />
+        </DataTemplate>-->
+
+
     </Application.Resources>
 </Application>
