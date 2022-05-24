@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MyMoviesWPF.MVVM.ViewModel
 {
-    internal class UserViewModel
+    public class UserViewModel : BaseViewModel
     {
     }
 }

@@ -104,7 +104,6 @@ Z:\УиФИС\MyMovies\MyMoviesWPF\bin\Debug\net6.0-windows\runtimes\win-arm64\n
 Z:\УиФИС\MyMovies\MyMoviesWPF\bin\Debug\net6.0-windows\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
 Z:\УиФИС\MyMovies\MyMoviesWPF\bin\Debug\net6.0-windows\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
 Z:\УиФИС\MyMovies\MyMoviesWPF\bin\Debug\net6.0-windows\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
-Z:\УиФИС\MyMovies\MyMoviesWPF\obj\Debug\net6.0-windows\MyMoviesWPF.csproj.AssemblyReference.cache
 Z:\УиФИС\MyMovies\MyMoviesWPF\obj\Debug\net6.0-windows\Dictionary_1.baml
 Z:\УиФИС\MyMovies\MyMoviesWPF\obj\Debug\net6.0-windows\App.baml
 Z:\УиФИС\MyMovies\MyMoviesWPF\obj\Debug\net6.0-windows\MainWindow.g.cs
@@ -124,3 +123,17 @@ Z:\УиФИС\MyMovies\MyMoviesWPF\obj\Debug\net6.0-windows\MyMoviesWPF.dll
 Z:\УиФИС\MyMovies\MyMoviesWPF\obj\Debug\net6.0-windows\ref\MyMoviesWPF.dll
 Z:\УиФИС\MyMovies\MyMoviesWPF\obj\Debug\net6.0-windows\MyMoviesWPF.pdb
 Z:\УиФИС\MyMovies\MyMoviesWPF\obj\Debug\net6.0-windows\MyMoviesWPF.genruntimeconfig.cache
+Z:\УиФИС\MyMovies\MyMoviesWPF\bin\Debug\net6.0-windows\Microsoft.Toolkit.Mvvm.dll
+Z:\УиФИС\MyMovies\MyMoviesWPF\bin\Debug\net6.0-windows\MvvmHelpers.dll
+Z:\УиФИС\MyMovies\MyMoviesWPF\obj\Debug\net6.0-windows\MVVM\View\Authorization.g.cs
+Z:\УиФИС\MyMovies\MyMoviesWPF\obj\Debug\net6.0-windows\MVVM\View\Catalog.g.cs
+Z:\УиФИС\MyMovies\MyMoviesWPF\obj\Debug\net6.0-windows\MVVM\View\Movie.g.cs
+Z:\УиФИС\MyMovies\MyMoviesWPF\obj\Debug\net6.0-windows\MVVM\View\Registration.g.cs
+Z:\УиФИС\MyMovies\MyMoviesWPF\obj\Debug\net6.0-windows\MVVM\View\UserView.g.cs
+Z:\УиФИС\MyMovies\MyMoviesWPF\obj\Debug\net6.0-windows\MVVM\View\Authorization.baml
+Z:\УиФИС\MyMovies\MyMoviesWPF\obj\Debug\net6.0-windows\MVVM\View\Catalog.baml
+Z:\УиФИС\MyMovies\MyMoviesWPF\obj\Debug\net6.0-windows\MVVM\View\Movie.baml
+Z:\УиФИС\MyMovies\MyMoviesWPF\obj\Debug\net6.0-windows\MVVM\View\Registration.baml
+Z:\УиФИС\MyMovies\MyMoviesWPF\obj\Debug\net6.0-windows\MVVM\View\UserView.baml
+Z:\УиФИС\MyMovies\MyMoviesWPF\obj\Debug\net6.0-windows\MyMoviesWPF.csproj.AssemblyReference.cache
+Z:\УиФИС\MyMovies\MyMoviesWPF\obj\Debug\net6.0-windows\GeneratedInternalTypeHelper.g.cs

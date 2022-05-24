@@ -10,16 +10,17 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace MyMoviesWPF.MVVM.View
 {
     /// <summary>
-    /// Логика взаимодействия для Registration.xaml
+    /// Логика взаимодействия для LogInControl.xaml
     /// </summary>
-    public partial class Registration : Window
+    public partial class LogInControl : UserControl
     {
-        public Registration()
+        public LogInControl()
         {
             InitializeComponent();
         }

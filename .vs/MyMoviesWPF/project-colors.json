@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "6c0e02f8-406c-4389-9f5a-182afbb7690f": {
+      "ProjectGuid": "6c0e02f8-406c-4389-9f5a-182afbb7690f",
+      "DisplayName": "MyMoviesWPF",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}

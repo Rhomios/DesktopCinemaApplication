@@ -11,7 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
-using System.Windows.Shapes;
+using MyMoviesWPF.MVVM.ViewModel;
 
 namespace MyMoviesWPF.MVVM.View
 {
@@ -23,6 +23,7 @@ namespace MyMoviesWPF.MVVM.View
         public UserView()
         {
             InitializeComponent();
+            //DataContext = new UserViewModel();
         }
     }
 }

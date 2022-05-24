@@ -4,11 +4,11 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
-        xmlns:local="clr-namespace:MyMoviesWPF.MVVM.View"      
+        xmlns:local="clr-namespace:MyMoviesWPF.MVVM.View" 
+        xmlns:viewmodel="clr-namespace:MyMoviesWPF.MVVM.ViewModel" d:DataContext="{d:DesignInstance Type=viewmodel:MainViewModel}"
         mc:Ignorable="d"
         Title="Main" Height="900" Width="1600"
         WindowStartupLocation="CenterScreen">
-
 
     <Grid>
         <Grid.RowDefinitions>
@@ -25,8 +25,14 @@
 
         <ContentControl 
                 HorizontalAlignment="Center" VerticalAlignment="Top" Grid.Column="2"
-                Content="{Binding CurrentToolbar}" Margin="0,10,0,0"
+                Content="{Binding CurrentToolbar}" Grid.Row="0"
                 />
+
+        <ContentControl 
+                HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="1"
+                Content="{Binding CurrentView}" Grid.Row="1"
+                />
+
 
 
         <!--<StackPanel Grid.Column="1" Orientation="Horizontal" Margin="0,10,0,0" HorizontalAlignment="Center" Width="824">

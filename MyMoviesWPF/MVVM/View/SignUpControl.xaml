@@ -1,12 +1,12 @@
-﻿<Window x:Class="MyMoviesWPF.MVVM.View.Registration"
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"      
-        xmlns:local="clr-namespace:MyMoviesWPF.MVVM.View"
-        mc:Ignorable="d"
-        Title="Registration" Height="670" Width="450">
+﻿<UserControl x:Class="MyMoviesWPF.MVVM.View.SignUpControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"      
+             xmlns:local="clr-namespace:MyMoviesWPF.MVVM.View"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
     <Grid>
         <TextBox 
                 HorizontalAlignment="Left" Margin="32,54,0,0" VerticalAlignment="Top" Width="368" Height="50"
@@ -35,6 +35,6 @@
         <Button 
                     Content="Войти"
                     FontFamily="Segoe UI" FontSize="20" FontStyle="Normal" FontWeight="Normal" Foreground="White"
-                    Command="{Binding SignIn}" CommandParameter="{Binding ElementName=Password}" Margin="32,504,50,118" Cursor="Hand" />
+                    Command="{Binding SignIn}" CommandParameter="{Binding ElementName=Password}" Margin="32,408,400,10" Cursor="Hand" />
     </Grid>
-</Window>
+</UserControl>

@@ -363,6 +363,14 @@
         }
       },
       "Microsoft.NETCore.Platforms/3.1.0": {},
+      "Microsoft.Toolkit.Mvvm/7.1.2": {
+        "runtime": {
+          "lib/net5.0/Microsoft.Toolkit.Mvvm.dll": {
+            "assemblyVersion": "7.1.0.0",
+            "fileVersion": "7.1.2.1"
+          }
+        }
+      },
       "Microsoft.Win32.Registry/4.7.0": {
         "dependencies": {
           "System.Security.AccessControl": "4.7.0",
@@ -413,6 +421,17 @@
           "lib/netcoreapp3.0/Microsoft.Xaml.Behaviors.dll": {
             "assemblyVersion": "1.1.0.0",
             "fileVersion": "1.1.19.35512"
+          }
+        }
+      },
+      "Refractored.MvvmHelpers/1.6.2": {
+        "dependencies": {
+          "System.ValueTuple": "4.5.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/MvvmHelpers.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
           }
         }
       },
@@ -628,6 +647,7 @@
           }
         }
       },
+      "System.ValueTuple/4.5.0": {},
       "System.Windows.Extensions/4.7.0": {
         "dependencies": {
           "System.Drawing.Common": "4.7.0"
@@ -874,6 +894,13 @@
       "path": "microsoft.netcore.platforms/3.1.0",
       "hashPath": "microsoft.netcore.platforms.3.1.0.nupkg.sha512"
     },
+    "Microsoft.Toolkit.Mvvm/7.1.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-tUQn6ar9oP7kmYaZ6pWabxpQaqw95Bsf+GG7prEL0y5MV5F60z76lI/Ppps9zcTqwd7e5CrdZBcdfor9WuvohA==",
+      "path": "microsoft.toolkit.mvvm/7.1.2",
+      "hashPath": "microsoft.toolkit.mvvm.7.1.2.nupkg.sha512"
+    },
     "Microsoft.Win32.Registry/4.7.0": {
       "type": "package",
       "serviceable": true,
@@ -894,6 +921,13 @@
       "sha512": "sha512-5sPWkbqImc2t1aQwIfJcKsUo7tOg1Tr8+6xVzZJB56Nzt4u9NlpcLofgdX/aRYpPKdWDA3U23Akw1KQzU5e82g==",
       "path": "microsoft.xaml.behaviors.wpf/1.1.19",
       "hashPath": "microsoft.xaml.behaviors.wpf.1.1.19.nupkg.sha512"
+    },
+    "Refractored.MvvmHelpers/1.6.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-pXiyT0ad3QI7IzZSSjVNliyhyyAe7lmNPdfAEgSrtjhF9twrYoKbBlTd58IJc67Fw8QmHEur8F9eBA4rj+BZAg==",
+      "path": "refractored.mvvmhelpers/1.6.2",
+      "hashPath": "refractored.mvvmhelpers.1.6.2.nupkg.sha512"
     },
     "System.Collections.Immutable/6.0.0": {
       "type": "package",
@@ -992,6 +1026,13 @@
       "sha512": "sha512-TcMd95wcrubm9nHvJEQs70rC0H/8omiSGGpU4FQ/ZA1URIqD4pjmFJh2Mfv1yH1eHgJDWTi2hMDXwTET+zOOyg==",
       "path": "system.text.json/4.7.2",
       "hashPath": "system.text.json.4.7.2.nupkg.sha512"
+    },
+    "System.ValueTuple/4.5.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-okurQJO6NRE/apDIP23ajJ0hpiNmJ+f0BwOlB/cSqTLQlw5upkf+5+96+iG2Jw40G1fCVCyPz/FhIABUjMR+RQ==",
+      "path": "system.valuetuple/4.5.0",
+      "hashPath": "system.valuetuple.4.5.0.nupkg.sha512"
     },
     "System.Windows.Extensions/4.7.0": {
       "type": "package",

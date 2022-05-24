@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 Z:\УиФИС\MyMovies\MyMoviesWPF\App.xaml
-81489952939
+9-1159358770
 
-20-1159938222
-220-946023612
-Dictionary_1.xaml;MainWindow.xaml;MVVM\View\Authorization.xaml;MVVM\View\Catalog.xaml;MVVM\View\Main.xaml;MVVM\View\Movie.xaml;MVVM\View\Registration.xaml;MVVM\View\UserView.xaml;
+27957404265
+222-691941673
+Dictionary_1.xaml;MainWindow.xaml;MVVM\View\Catalog.xaml;MVVM\View\LogInControl.xaml;MVVM\View\Main.xaml;MVVM\View\MainSR.xaml;MVVM\View\Movie.xaml;MVVM\View\SignUpControl.xaml;MVVM\View\UserView.xaml;
 
-False
+True
 

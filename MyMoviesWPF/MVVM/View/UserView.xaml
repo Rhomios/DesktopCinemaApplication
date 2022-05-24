@@ -4,13 +4,15 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:MyMoviesWPF.MVVM.View"
+             xmlns:viewmodel="clr-namespace:MyMoviesWPF.MVVM.ViewModel" 
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
+
     <Grid>
         <StackPanel Grid.Column="2" Margin="0,10,0,10" Orientation="Vertical" HorizontalAlignment="Center" Width="350">
             <StackPanel Height="35" Orientation="Horizontal">
-                <Button Width="175" Content="Регистрация"/>
-                <Button Width="175" Content="Вход"/>
+                <Button Width="175" Content="Регистрация" Command="{Binding SignUpCommand}"/>
+                <Button Width="175" Content="Вход"        Command="{Binding LogInCommand}" Cursor="Hand"/>
             </StackPanel>
             <StackPanel Height="35" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Bottom">
                 <Button Style="{DynamicResource MaterialDesignRaisedSecondaryDarkButton}" Width="175" Content="Корзина" Cursor="Hand" />
