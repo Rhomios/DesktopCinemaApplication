@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
              xmlns:View="clr-namespace:MyMoviesWPF.MVVM.View"
              xmlns:viewModel="clr-namespace:MyMoviesWPF.MVVM.ViewModel"
-             StartupUri="MVVM\View\Main.xaml">
+             StartupUri="MVVM\View\Catalog.xaml">
     <Application.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
@@ -12,20 +12,9 @@
                 <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/Themes/Recommended/Primary/MaterialDesignColor.BlueGrey.xaml" />
                 <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/Themes/Recommended/Accent/MaterialDesignColor.Purple.xaml" />
             </ResourceDictionary.MergedDictionaries>
-            
             <DataTemplate DataType="{x:Type viewModel:UserViewModel}">
                 <View:UserView />
             </DataTemplate>
-            <DataTemplate DataType="{x:Type viewModel:CatalogViewModel}">
-                <View:Catalog />
-            </DataTemplate>
-            <DataTemplate DataType="{x:Type viewModel:LogInControlViewModel}">
-                <View:LogInControl />
-            </DataTemplate>
-            <DataTemplate DataType="{x:Type viewModel:SignUpControlViewModel}">
-                <View:SignUpControl />
-            </DataTemplate>
-
         </ResourceDictionary>
 
 

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MyMoviesWPF.MVVM.ViewModel;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,18 +11,19 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using MyMoviesWPF.MVVM.ViewModel;
+using System.Windows.Shapes;
 
 namespace MyMoviesWPF.MVVM.View
 {
     /// <summary>
-    /// Логика взаимодействия для Catalog.xaml
+    /// Interaction logic for Catalog.xaml
     /// </summary>
-    public partial class Catalog : UserControl
+    public partial class Catalog : Window
     {
         public Catalog()
         {
             InitializeComponent();
+            DataContext = new CatalogViewModel();
         }
     }
 }

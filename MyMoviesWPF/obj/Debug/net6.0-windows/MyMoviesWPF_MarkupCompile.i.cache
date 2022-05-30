@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 C:\Users\Rhomaios\source\repos\MyMovies\MyMoviesWPF\App.xaml
-9-1159358770
+8356919298
 
-27957404265
+242111038539
 2221324035802
-Dictionary_1.xaml;MainWindow.xaml;MVVM\View\Catalog.xaml;MVVM\View\LogInControl.xaml;MVVM\View\Main.xaml;MVVM\View\MainSR.xaml;MVVM\View\Movie.xaml;MVVM\View\SignUpControl.xaml;MVVM\View\UserView.xaml;
+Dictionary_1.xaml;MainWindow.xaml;MVVM\View\Catalog.xaml;MVVM\View\Controls\UserView.xaml;MVVM\View\LogInControl.xaml;MVVM\View\Movie.xaml;MVVM\View\UserInit\LogInView.xaml;MVVM\View\UserInit\SignUpView.xaml;
 
-True
+False
 

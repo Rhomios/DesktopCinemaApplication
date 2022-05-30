@@ -10,13 +10,16 @@
     <Compile Update="MVVM\View\Catalog.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="MVVM\View\Main.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
     <Compile Update="MVVM\View\Movie.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="MVVM\View\UserView.xaml.cs">
+    <Compile Update="MVVM\View\UserInit\LogInView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="MVVM\View\UserInit\SignUpView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="MVVM\View\Controls\UserView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
@@ -30,13 +33,16 @@
     <Page Update="MVVM\View\Catalog.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="MVVM\View\Main.xaml">
-      <SubType>Designer</SubType>
-    </Page>
     <Page Update="MVVM\View\Movie.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="MVVM\View\UserView.xaml">
+    <Page Update="MVVM\View\UserInit\LogInView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MVVM\View\UserInit\SignUpView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MVVM\View\Controls\UserView.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

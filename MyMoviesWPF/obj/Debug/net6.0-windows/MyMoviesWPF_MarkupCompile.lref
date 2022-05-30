@@ -1,11 +1,10 @@
 ﻿
-FC:\Users\Rhomaios\Source\Repos\MyMovies\MyMoviesWPF\App.xaml;;
-FC:\Users\Rhomaios\Source\Repos\MyMovies\MyMoviesWPF\MainWindow.xaml;;
-FC:\Users\Rhomaios\Source\Repos\MyMovies\MyMoviesWPF\MVVM\View\Catalog.xaml;;
-FC:\Users\Rhomaios\Source\Repos\MyMovies\MyMoviesWPF\MVVM\View\LogInControl.xaml;;
-FC:\Users\Rhomaios\Source\Repos\MyMovies\MyMoviesWPF\MVVM\View\Main.xaml;;
-FC:\Users\Rhomaios\Source\Repos\MyMovies\MyMoviesWPF\MVVM\View\MainSR.xaml;;
-FC:\Users\Rhomaios\Source\Repos\MyMovies\MyMoviesWPF\MVVM\View\Movie.xaml;;
-FC:\Users\Rhomaios\Source\Repos\MyMovies\MyMoviesWPF\MVVM\View\SignUpControl.xaml;;
-FC:\Users\Rhomaios\Source\Repos\MyMovies\MyMoviesWPF\MVVM\View\UserView.xaml;;
+FC:\Users\Rhomaios\source\repos\MyMovies\MyMoviesWPF\App.xaml;;
+FC:\Users\Rhomaios\source\repos\MyMovies\MyMoviesWPF\MainWindow.xaml;;
+FC:\Users\Rhomaios\source\repos\MyMovies\MyMoviesWPF\MVVM\View\Catalog.xaml;;
+FC:\Users\Rhomaios\source\repos\MyMovies\MyMoviesWPF\MVVM\View\LogInControl.xaml;;
+FC:\Users\Rhomaios\source\repos\MyMovies\MyMoviesWPF\MVVM\View\Movie.xaml;;
+FC:\Users\Rhomaios\source\repos\MyMovies\MyMoviesWPF\MVVM\View\UserInit\LogInView.xaml;;
+FC:\Users\Rhomaios\source\repos\MyMovies\MyMoviesWPF\MVVM\View\UserInit\SignUpView.xaml;;
+FC:\Users\Rhomaios\source\repos\MyMovies\MyMoviesWPF\MVVM\View\Controls\UserView.xaml;;
 
