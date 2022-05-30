@@ -10,17 +10,16 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace MyMoviesWPF.MVVM.View
 {
     /// <summary>
-    /// Логика взаимодействия для Movie.xaml
+    /// Логика взаимодействия для MovieView.xaml
     /// </summary>
-    public partial class Movie : UserControl
+    public partial class MovieView : Window
     {
-        public Movie()
+        public MovieView()
         {
             InitializeComponent();
         }

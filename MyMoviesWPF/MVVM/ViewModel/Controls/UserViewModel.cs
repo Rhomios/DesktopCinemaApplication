@@ -26,7 +26,7 @@ namespace MyMoviesWPF.MVVM.ViewModel
         {
             get => new RelayCommand<object>(o =>
             {
-                LogInView view = new LogInView();
+                SignUpView view = new SignUpView();
                 view.Show();
 
             }

@@ -9,8 +9,8 @@
         WindowStartupLocation="CenterScreen">
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="45*"/>
-            <RowDefinition Height="397*"/>
+            <RowDefinition Height="31*"/>
+            <RowDefinition Height="190*"/>
         </Grid.RowDefinitions>
 
         <Grid.ColumnDefinitions>
@@ -19,10 +19,8 @@
             <ColumnDefinition Width="176*"/>
         </Grid.ColumnDefinitions>
 
-        <StackPanel Grid.Column="1" Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center">
-            <Button Height="150" Width="100" VerticalAlignment="Center" Cursor="Hand"/>
-            <DataGrid HorizontalAlignment="Center"/>
-            <Button Height="150" Width="100"/>
+        <StackPanel Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,104,0,0" Grid.RowSpan="2" Width="972">
+            <DataGrid Height="350" Width="972"/>
         </StackPanel>
 
         <ContentControl 

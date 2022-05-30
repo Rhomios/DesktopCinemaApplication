@@ -15,6 +15,8 @@ namespace MyMoviesWPF.Models
         public decimal Price { get; set; }
         public int? Idorder { get; set; }
         public byte[]? Trailer { get; set; }
+        public byte[]? Image { get; set; }
+
 
         public virtual ActorList? IdactorListNavigation { get; set; }
         public virtual Genre? IdgenreNavigation { get; set; }

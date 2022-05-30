@@ -104,6 +104,9 @@ namespace MyMoviesWPF.Models
                 entity.Property(e => e.Trailer)
                     .HasMaxLength(200)
                     .IsFixedLength();
+                entity.Property(e => e.Image)
+                    .HasMaxLength(200)
+                    .IsFixedLength();
 
                 entity.HasOne(d => d.IdactorListNavigation)
                     .WithMany(p => p.Movies)

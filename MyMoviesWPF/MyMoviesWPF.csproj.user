@@ -10,7 +10,7 @@
     <Compile Update="MVVM\View\Catalog.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="MVVM\View\Movie.xaml.cs">
+    <Compile Update="MVVM\View\MovieView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="MVVM\View\UserInit\LogInView.xaml.cs">
@@ -33,7 +33,7 @@
     <Page Update="MVVM\View\Catalog.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="MVVM\View\Movie.xaml">
+    <Page Update="MVVM\View\MovieView.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="MVVM\View\UserInit\LogInView.xaml">
