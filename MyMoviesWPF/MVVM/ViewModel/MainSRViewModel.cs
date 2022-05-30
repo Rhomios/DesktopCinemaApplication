@@ -8,17 +8,17 @@ namespace MyMoviesWPF.MVVM.ViewModel
 {
     public class MainSRViewModel : BaseViewModel
     {
-        private BaseViewModel _view = new SignUpControlViewModel();
+        //private BaseViewModel _view = new SignUpControlViewModel();
 
-        public BaseViewModel CurrentView
-        {
-            get { return _view; }
-            set
-            {
-                _view = value;
-                OnPropertyChanged();
-            }
-        }
+        //public BaseViewModel CurrentView
+        //{
+        //    get { return _view; }
+        //    set
+        //    {
+        //        _view = value;
+        //        OnPropertyChanged();
+        //    }
+        //}
 
 
 
