@@ -19,8 +19,14 @@
             <ColumnDefinition Width="176*"/>
         </Grid.ColumnDefinitions>
 
-        <StackPanel Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,104,0,0" Grid.RowSpan="2" Width="972">
-            <DataGrid Height="350" Width="972"/>
+        <StackPanel Grid.Column="1" Orientation="Horizontal"  HorizontalAlignment="Center" Margin="0,104,0,0" Grid.RowSpan="2" Width="972" >
+            <DataGrid Height="350" Width="972" IsReadOnly="True"
+                      ItemsSource="{Binding MoviesCollection}" SelectedItem="{Binding OpenMovieWindow}">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Название" Binding="{Binding Name}" IsReadOnly="True"></DataGridTextColumn>
+                </DataGrid.Columns>
+
+            </DataGrid>
         </StackPanel>
 
         <ContentControl 

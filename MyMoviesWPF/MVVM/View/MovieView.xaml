@@ -39,7 +39,7 @@
         </StackPanel>
         <StackPanel HorizontalAlignment="Right" VerticalAlignment="Top" Grid.Column="1" Grid.Row="1">
             <Image Height="512" Width="512"/>
-            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Title" VerticalAlignment="Top"/>
+            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="{Binding Movie.Name}" VerticalAlignment="Top"/>
             <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Description" VerticalAlignment="Top"/>
 
         </StackPanel>
