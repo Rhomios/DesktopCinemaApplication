@@ -18,6 +18,7 @@ namespace MyMoviesWPF.Models
 
         public virtual DbSet<Actor> Actors { get; set; } = null!;
         public virtual DbSet<ActorList> ActorLists { get; set; } = null!;
+        public virtual DbSet<Catalog> Catalogs { get; set; } = null!;
         public virtual DbSet<Genre> Genres { get; set; } = null!;
         public virtual DbSet<Movie> Movies { get; set; } = null!;
         public virtual DbSet<Order> Orders { get; set; } = null!;
@@ -29,7 +30,6 @@ namespace MyMoviesWPF.Models
             if (!optionsBuilder.IsConfigured)
             {
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
-                //optionsBuilder.UseSqlServer("Data Source=(localdb)\\MSSQLLocalDB;Database=MyMoviesDB; Integrated Security=True;");
                 optionsBuilder.UseSqlServer("Server = mssql; Database = gr602_horse; Trusted_Connection = True;");
             }
         }
@@ -55,9 +55,7 @@ namespace MyMoviesWPF.Models
 
                 entity.ToTable("ActorList");
 
-                entity.Property(e => e.IdactorList)
-                    .ValueGeneratedNever()
-                    .HasColumnName("IDActorList");
+                entity.Property(e => e.IdactorList).HasColumnName("IDActorList");
 
                 entity.Property(e => e.Idactor).HasColumnName("IDActor");
 
@@ -65,7 +63,24 @@ namespace MyMoviesWPF.Models
                     .WithMany(p => p.ActorLists)
                     .HasForeignKey(d => d.Idactor)
                     .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("FK_ActorList_Actors1");
+                    .HasConstraintName("FK_ActorList_Actors");
+            });
+
+            modelBuilder.Entity<Catalog>(entity =>
+            {
+                entity.ToTable("Catalog");
+
+                entity.Property(e => e.CatalogId).HasColumnName("CatalogID");
+
+                entity.Property(e => e.Idmovie).HasColumnName("IDMovie");
+
+                entity.Property(e => e.Title).HasMaxLength(20);
+
+                entity.HasOne(d => d.IdmovieNavigation)
+                    .WithMany(p => p.Catalogs)
+                    .HasForeignKey(d => d.Idmovie)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("FK_Catalog_Movie");
             });
 
             modelBuilder.Entity<Genre>(entity =>
@@ -93,6 +108,8 @@ namespace MyMoviesWPF.Models
 
                 entity.Property(e => e.Idorder).HasColumnName("IDOrder");
 
+                entity.Property(e => e.Image).HasMaxLength(255);
+
                 entity.Property(e => e.Languages).HasMaxLength(100);
 
                 entity.Property(e => e.Name).HasMaxLength(50);
@@ -101,17 +118,12 @@ namespace MyMoviesWPF.Models
 
                 entity.Property(e => e.ProductYear).HasColumnType("date");
 
-                entity.Property(e => e.Trailer)
-                    .HasMaxLength(200)
-                    .IsFixedLength();
-                entity.Property(e => e.Image)
-                    .HasMaxLength(200)
-                    .IsFixedLength();
+                entity.Property(e => e.Trailer).HasMaxLength(255);
 
                 entity.HasOne(d => d.IdactorListNavigation)
                     .WithMany(p => p.Movies)
                     .HasForeignKey(d => d.IdactorList)
-                    .HasConstraintName("FK_Movie_ActorList1");
+                    .HasConstraintName("FK_Movie_ActorList");
 
                 entity.HasOne(d => d.IdgenreNavigation)
                     .WithMany(p => p.Movies)
@@ -201,3 +213,4 @@ namespace MyMoviesWPF.Models
         partial void OnModelCreatingPartial(ModelBuilder modelBuilder);
     }
 }
+

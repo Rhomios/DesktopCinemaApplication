@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace MyMoviesWPF.Models
+namespace MyMoviesWPF
 {
     public partial class Genre
     {
