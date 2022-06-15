@@ -1,5 +1,5 @@
 ﻿MyMoviesWPF
-1.0.0.0
+
 
 winexe
 C#
@@ -12,9 +12,9 @@ TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 C:\Users\gr602_horse\Source\Repos\MyMovies\MyMoviesWPF\App.xaml
 82108305090
 
-27228246271
+25-547201491
 222-691941673
 Dictionary_1.xaml;MainWindow.xaml;MVVM\View\Catalog.xaml;MVVM\View\Controls\UserView.xaml;MVVM\View\LogInControl.xaml;MVVM\View\MovieView.xaml;MVVM\View\UserInit\LogInView.xaml;MVVM\View\UserInit\SignUpView.xaml;
 
-True
+False
 

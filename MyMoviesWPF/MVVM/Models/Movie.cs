@@ -9,6 +9,10 @@ namespace MyMoviesWPF
         {
             Catalogs = new HashSet<Catalog>();
         }
+        public Movie(Microsoft.EntityFrameworkCore.Query.IIncludableQueryable<Movie, string> includableQueryable)
+        {
+            Catalogs = new HashSet<Catalog>();
+        }
 
         public int Idmovie { get; set; }
         public int? Idgenre { get; set; }

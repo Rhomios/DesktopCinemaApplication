@@ -15,7 +15,6 @@ namespace MyMoviesWPF.Models
             : base(options)
         {
         }
-
         public virtual DbSet<Actor> Actors { get; set; } = null!;
         public virtual DbSet<ActorList> ActorLists { get; set; } = null!;
         public virtual DbSet<Catalog> Catalogs { get; set; } = null!;
@@ -213,4 +212,3 @@ namespace MyMoviesWPF.Models
         partial void OnModelCreatingPartial(ModelBuilder modelBuilder);
     }
 }
-

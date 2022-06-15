@@ -65,7 +65,7 @@ namespace MyMoviesWPF.MVVM.View.UserInit {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/MyMoviesWPF;V1.0.0.0;component/mvvm/view/userinit/loginview.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/MyMoviesWPF;component/mvvm/view/userinit/loginview.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\..\..\MVVM\View\UserInit\LogInView.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

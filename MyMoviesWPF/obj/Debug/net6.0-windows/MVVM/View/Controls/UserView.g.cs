@@ -54,7 +54,7 @@ namespace MyMoviesWPF.MVVM.View {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/MyMoviesWPF;V1.0.0.0;component/mvvm/view/controls/userview.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/MyMoviesWPF;component/mvvm/view/controls/userview.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\..\..\MVVM\View\Controls\UserView.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

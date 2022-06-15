@@ -24,7 +24,7 @@
 
 
         <StackPanel Grid.Column="1" Grid.Row="1" Orientation="Vertical" HorizontalAlignment="Left"  VerticalAlignment="Top">
-            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Category" VerticalAlignment="Top"/>
+            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="{Binding Category}" VerticalAlignment="Top"/>
             <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Genre" VerticalAlignment="Top"/>
             <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Year" VerticalAlignment="Top"/>
             <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Languages" VerticalAlignment="Top"/>
@@ -38,9 +38,10 @@
 
         </StackPanel>
         <StackPanel HorizontalAlignment="Right" VerticalAlignment="Top" Grid.Column="1" Grid.Row="1">
-            <Image Height="512" Width="512"/>
-            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="{Binding Movie.Name}" VerticalAlignment="Top"/>
-            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Description" VerticalAlignment="Top"/>
+            <!--<Image Height="512" Width="512" Source="https://i.ibb.co/zG06HJc/image.png"/>-->
+            <!--<MediaElement Source="" Name="mePlayer" Stretch="None" />-->
+            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="{Binding Name}" VerticalAlignment="Top"/>
+            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="{Binding Description}" VerticalAlignment="Top"/>
 
         </StackPanel>
     </Grid>
