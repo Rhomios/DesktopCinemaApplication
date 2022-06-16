@@ -8,29 +8,6 @@
         Title="Каталог" Height="900" Width="1600"        
         WindowStartupLocation="CenterScreen">
     <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="31*"/>
-            <RowDefinition Height="190*"/>
-        </Grid.RowDefinitions>
 
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="139*"/>
-            <ColumnDefinition Width="485*"/>
-            <ColumnDefinition Width="176*"/>
-        </Grid.ColumnDefinitions>
-
-        <StackPanel Grid.Column="1" Orientation="Horizontal"  HorizontalAlignment="Center" Margin="0,104,0,0" Grid.RowSpan="2" Width="972" >
-            <DataGrid Height="350" Width="972" IsReadOnly="True"
-                      ItemsSource="{Binding MoviesCollection}" SelectedItem="{Binding OpenMovieWindow}">
-                <DataGrid.Columns>
-                    <DataGridTextColumn Header="Название" Binding="{Binding Name}" IsReadOnly="True"></DataGridTextColumn>
-                </DataGrid.Columns>
-
-            </DataGrid>
-        </StackPanel>
-
-        <ContentControl 
-                HorizontalAlignment="Center" VerticalAlignment="Top" Grid.Row="0" Grid.Column="2"
-                Content="{Binding CurrentControlView}" />
     </Grid>
 </Window>

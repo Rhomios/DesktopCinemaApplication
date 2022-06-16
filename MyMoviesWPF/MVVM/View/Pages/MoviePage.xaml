@@ -1,0 +1,48 @@
+﻿<Page x:Class="MyMoviesWPF.MVVM.View.Pages.MoviePage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:MyMoviesWPF.MVVM.View.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="900" d:DesignWidth="1600"
+        Title="Фильм">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="213*"/>
+            <ColumnDefinition Width="187*"/>
+
+        </Grid.ColumnDefinitions>
+        <StackPanel Margin="85,8,725,4">
+            <Image HorizontalAlignment="Left" Margin="117,10,0,0" VerticalAlignment="Top"/>
+        </StackPanel>
+
+
+
+        <StackPanel Orientation="Vertical" HorizontalAlignment="Left"  VerticalAlignment="Top" >
+            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="{Binding Category}" VerticalAlignment="Top"/>
+            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="{Binding Genre.Name}" VerticalAlignment="Top"/>
+            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="{Binding Year}" VerticalAlignment="Top"/>
+            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="{Binding Languages}" VerticalAlignment="Top"/>
+            <DataGrid ColumnWidth="100" IsReadOnly="True" AutoGenerateColumns="False" ItemsSource="{Binding ActorsCollection}">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Актёры" Binding="{Binding Name}" IsReadOnly="True"></DataGridTextColumn>
+                </DataGrid.Columns>
+            </DataGrid>
+            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="{Binding Price}" VerticalAlignment="Top"/>
+
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right"  VerticalAlignment="Bottom" Grid.Column="1" Height="75" Width="400" Margin="0,0,54,0">
+            <Button Height="75" Width="200" Content="В корзину"/>
+            <Button Height="75" Width="200" Content="Отмена"/>
+
+        </StackPanel>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Top" Grid.Column="1">
+            <!--<Image Height="512" Width="512" Source="https://i.ibb.co/zG06HJc/image.png"/>-->
+            <MediaElement Height="512" Source="{Binding TrailerURL}" Name="mePlayer" Stretch="Uniform"  />
+            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="{Binding Name}" VerticalAlignment="Top"/>
+            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="{Binding Description}" VerticalAlignment="Top"/>
+
+        </StackPanel>
+    </Grid>
+</Page>

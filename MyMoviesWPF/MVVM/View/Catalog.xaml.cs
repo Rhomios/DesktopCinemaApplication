@@ -23,7 +23,6 @@ namespace MyMoviesWPF.MVVM.View
         public Catalog()
         {
             InitializeComponent();
-            DataContext = new CatalogViewModel();
         }
     }
 }

@@ -13,6 +13,12 @@
     <Compile Update="MVVM\View\MovieView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="MVVM\View\Pages\CatalogPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="MVVM\View\Pages\MoviePage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="MVVM\View\UserInit\LogInView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -34,6 +40,12 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="MVVM\View\MovieView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MVVM\View\Pages\CatalogPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MVVM\View\Pages\MoviePage.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="MVVM\View\UserInit\LogInView.xaml">

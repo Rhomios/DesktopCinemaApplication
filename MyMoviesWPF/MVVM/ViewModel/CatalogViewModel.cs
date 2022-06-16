@@ -7,6 +7,7 @@ using MyMoviesWPF.Models;
 using Microsoft.Toolkit.Mvvm.Input;
 using System.Windows;
 using MyMoviesWPF.MVVM.View;
+using MyMoviesWPF.MVVM.View.Pages;
 
 namespace MyMoviesWPF.MVVM.ViewModel
 {
@@ -37,12 +38,13 @@ namespace MyMoviesWPF.MVVM.ViewModel
                 _movie = value;
                 Service.movie = _movie;
                 _movie = null;
-                foreach (Window item in Application.Current.Windows)
-                {
-                    if (item.DataContext == this) item.Hide();
-                }
-                MovieView movieView = new MovieView();
-                movieView.Show();
+                Service.MainViewModel.UpdatePage(new MoviePage());
+                //foreach (Window item in Application.Current.Windows)
+                //{
+                //    if (item.DataContext == this) item.Hide();
+                //}
+                //MovieView movieView = new MovieView();
+                //movieView.Show();
             }
 
         }
