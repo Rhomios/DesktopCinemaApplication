@@ -3,6 +3,7 @@ using MyMoviesWPF.Models;
 using MyMoviesWPF.MVVM.ViewModel.Core;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -19,6 +20,11 @@ namespace MyMoviesWPF.MVVM.ViewModel
         public string Year { get => Convert.ToString(Service.movie.ProductYear); }
         public string Languages { get => Service.movie.Languages; }
         public string Price { get => Convert.ToString(Service.movie.Price); }
+        //public ObservableCollection<Actor> ActorsCollection
+        //{
+        //    //get => Service.db.ActorLists.Where(a => a.ListNum == Service.movie.IdactorList)
+
+        //}
 
         public MovieViewModel()
         {
