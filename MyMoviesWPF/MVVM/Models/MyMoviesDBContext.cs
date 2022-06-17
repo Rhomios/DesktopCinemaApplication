@@ -119,10 +119,10 @@ namespace MyMoviesWPF.Models
 
                 entity.Property(e => e.Trailer).HasMaxLength(255);
 
-                entity.HasOne(d => d.IdactorListNavigation)
-                    .WithMany(p => p.Movies)
-                    .HasForeignKey(d => d.IdactorList)
-                    .HasConstraintName("FK_Movie_ActorList");
+                //entity.HasOne(d => d.IdactorListNavigation)
+                //    .WithMany(p => p.Movies)
+                //    .HasForeignKey(d => d.IdactorList)
+                //    .HasConstraintName("FK_Movie_ActorList");
 
                 entity.HasOne(d => d.IdgenreNavigation)
                     .WithMany(p => p.Movies)

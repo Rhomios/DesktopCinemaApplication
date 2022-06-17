@@ -26,7 +26,7 @@ namespace MyMoviesWPF
         public string? Trailer { get; set; }
         public string? Image { get; set; }
 
-        public virtual ActorList? IdactorListNavigation { get; set; }
+        //public virtual ActorList? IdactorListNavigation { get; set; }
         public virtual Genre? IdgenreNavigation { get; set; }
         public virtual Order? IdorderNavigation { get; set; }
         public virtual ICollection<Catalog> Catalogs { get; set; }

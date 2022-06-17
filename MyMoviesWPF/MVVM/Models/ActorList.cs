@@ -7,7 +7,7 @@ namespace MyMoviesWPF
     {
         public ActorList()
         {
-            Movies = new HashSet<Movie>();
+            //Movies = new HashSet<Movie>();
         }
 
         public int IdactorList { get; set; }
@@ -15,6 +15,6 @@ namespace MyMoviesWPF
         public int ListNum { get; set; }
 
         public virtual Actor IdactorNavigation { get; set; } = null!;
-        public virtual ICollection<Movie> Movies { get; set; }
+        //public virtual ICollection<Movie> Movies { get; set; }
     }
 }

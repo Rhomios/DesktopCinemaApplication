@@ -11,13 +11,71 @@
     <Grid>
 
         <StackPanel Orientation="Horizontal"  HorizontalAlignment="Center">
-            <DataGrid IsReadOnly="True"
+            <!--<DataGrid Template="{DynamicResource DataGridTemplate1}" Style="{DynamicResource MaterialDesignDataGrid}" ></DataGrid>-->
+
+            <DataGrid ItemsSource="{Binding MoviesCollection}" SelectedItem="{Binding OpenMovieWindow}" HeadersVisibility="None"
+                    Width="256" IsReadOnly="True" AutoGenerateColumns="False" BorderBrush = "Transparent" Background = "Transparent" RowBackground = "Transparent">
+                <DataGrid.LayoutTransform>
+                    <TransformGroup>
+                        <RotateTransform Angle="90"/>
+                        <MatrixTransform Matrix="-1,0,0,1,0,0"/>
+                    </TransformGroup>
+                </DataGrid.LayoutTransform>
+                <DataGrid.ColumnHeaderStyle>
+                    <Style TargetType="{x:Type DataGridColumnHeader}"
+                            BasedOn="{StaticResource {x:Type DataGridColumnHeader}}">
+                        <Setter Property="LayoutTransform">
+                            <Setter.Value>
+                                <TransformGroup>
+                                    <RotateTransform Angle="-90"/>
+                                    <ScaleTransform ScaleX="1" ScaleY="-1" />
+                                </TransformGroup>
+                            </Setter.Value>
+                        </Setter>
+                    </Style>
+                </DataGrid.ColumnHeaderStyle>
+                <DataGrid.CellStyle>
+                    <Style  TargetType="DataGridCell">
+                        <Setter Property="LayoutTransform">
+                            <Setter.Value>
+                                <TransformGroup>
+                                    <RotateTransform Angle="-90"/>
+                                    <ScaleTransform ScaleX="1" ScaleY="-1" />
+                                </TransformGroup>
+                            </Setter.Value>
+                        </Setter>
+                    </Style>
+                </DataGrid.CellStyle>
+                <DataGrid.Columns>
+                    <DataGridTemplateColumn Header="File Type" Width="200">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <Image Height="200" Width="200" Source="{Binding Image}" Stretch="Uniform" />
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                    <DataGridTextColumn Header="Название" Binding="{Binding Name}" IsReadOnly="True"></DataGridTextColumn>
+                </DataGrid.Columns>                
+            </DataGrid>
+
+
+
+            <!--<Button Height="128" Width="128" Command="{Binding OpenMovieWindow, Mode=OneWay}" Cursor="Hand">
+                <Button.Template>
+                    <ControlTemplate>
+                        <Image Source="https://media.discordapp.net/attachments/987064912704573583/987066526106521670/unknown.png"></Image>
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>-->
+
+
+            <!--<DataGrid IsReadOnly="True"
                       ItemsSource="{Binding MoviesCollection}" SelectedItem="{Binding OpenMovieWindow}">
                 <DataGrid.Columns>
                     <DataGridTextColumn Header="Название" Binding="{Binding Name}" IsReadOnly="True"></DataGridTextColumn>
                 </DataGrid.Columns>
 
-            </DataGrid>
+            </DataGrid>-->
         </StackPanel>
 
         <!--<ContentControl 

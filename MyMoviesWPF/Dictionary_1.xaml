@@ -9,6 +9,9 @@
             </Setter.Value>
         </Setter>
     </Style>
+    <ControlTemplate x:Key="DataGridTemplate1" TargetType="{x:Type DataGrid}">
+        <Grid/>
+    </ControlTemplate>
     <SolidColorBrush x:Key="Button.Static.Background" Color="#FFDDDDDD"/>
     <SolidColorBrush x:Key="Button.Static.Border" Color="#FF707070"/>
     <SolidColorBrush x:Key="Button.MouseOver.Background" Color="#FFBEE6FD"/>
@@ -55,5 +58,17 @@
             </Setter.Value>
         </Setter>
     </Style>
+
+
+
+
+
+
+
+
+
+
+
+
 
 </ResourceDictionary>

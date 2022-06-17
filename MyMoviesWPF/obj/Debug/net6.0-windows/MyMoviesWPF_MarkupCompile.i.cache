@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\gr602_horse\Source\Repos\MyMovies\MyMoviesWPF\obj\Debug\net6.0-windows\
+C:\Users\gr602_horse\source\repos\MyMovies\MyMoviesWPF\obj\Debug\net6.0-windows\
 MyMoviesWPF
 none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
-C:\Users\gr602_horse\Source\Repos\MyMovies\MyMoviesWPF\App.xaml
+C:\Users\gr602_horse\source\repos\MyMovies\MyMoviesWPF\App.xaml
 8-1154585901
 
 27206347693
 222-691941673
 Dictionary_1.xaml;MainWindow.xaml;MVVM\View\Controls\UserView.xaml;MVVM\View\LogInControl.xaml;MVVM\View\Pages\CatalogPage.xaml;MVVM\View\Pages\MoviePage.xaml;MVVM\View\UserInit\LogInView.xaml;MVVM\View\UserInit\SignUpView.xaml;
 
-False
+True
 

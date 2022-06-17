@@ -20,16 +20,27 @@
 
 
         <StackPanel Orientation="Vertical" HorizontalAlignment="Left"  VerticalAlignment="Top" >
-            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="{Binding Category}" VerticalAlignment="Top"/>
-            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="{Binding Genre.Name}" VerticalAlignment="Top"/>
-            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="{Binding Year}" VerticalAlignment="Top"/>
-            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="{Binding Languages}" VerticalAlignment="Top"/>
-            <DataGrid ColumnWidth="100" IsReadOnly="True" AutoGenerateColumns="False" ItemsSource="{Binding ActorsCollection}">
+            <StackPanel Orientation="Horizontal">
+                <TextBlock TextWrapping="Wrap" Text="Жанр: " FontSize="20"/>
+                <TextBlock TextWrapping="Wrap" Text="{Binding Genre.Name}" VerticalAlignment="Bottom"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock TextWrapping="Wrap" Text="Дата выхода: " FontSize="20"/>
+                <TextBlock TextWrapping="Wrap" Text="{Binding Year}" VerticalAlignment="Bottom"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock TextWrapping="Wrap" Text="Языки: " FontSize="20"/>
+                <TextBlock TextWrapping="Wrap" Text="{Binding Languages}" VerticalAlignment="Bottom"/>
+            </StackPanel>
+            <DataGrid ColumnWidth="*" IsReadOnly="True" AutoGenerateColumns="False" ItemsSource="{Binding ActorsCollection}" BorderBrush = "Transparent" Background = "Transparent" RowBackground = "Transparent">
                 <DataGrid.Columns>
-                    <DataGridTextColumn Header="Актёры" Binding="{Binding Name}" IsReadOnly="True"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Актёры" Binding="{Binding IdactorNavigation.Name}" IsReadOnly="True"/>
                 </DataGrid.Columns>
             </DataGrid>
-            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="{Binding Price}" VerticalAlignment="Top"/>
+            <StackPanel Orientation="Vertical">
+                <TextBlock TextWrapping="Wrap" Text="Цена: "/>
+                <TextBlock TextWrapping="Wrap" Text="{Binding Price}" HorizontalAlignment="Left" FontSize="20"/>
+            </StackPanel>            
 
         </StackPanel>
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Right"  VerticalAlignment="Bottom" Grid.Column="1" Height="75" Width="400" Margin="0,0,54,0">
@@ -38,10 +49,9 @@
 
         </StackPanel>
         <StackPanel HorizontalAlignment="Center" VerticalAlignment="Top" Grid.Column="1">
-            <!--<Image Height="512" Width="512" Source="https://i.ibb.co/zG06HJc/image.png"/>-->
             <MediaElement Height="512" Source="{Binding TrailerURL}" Name="mePlayer" Stretch="Uniform"  />
-            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="{Binding Name}" VerticalAlignment="Top"/>
-            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="{Binding Description}" VerticalAlignment="Top"/>
+            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="{Binding Name}" VerticalAlignment="Top" FontSize="20"/>
+            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="{Binding Description}" VerticalAlignment="Top" FontSize="16"/>
 
         </StackPanel>
     </Grid>

@@ -261,10 +261,8 @@ C:\Users\gr602_horse\Source\Repos\MyMovies\MyMoviesWPF\bin\Debug\net6.0-windows\
 C:\Users\gr602_horse\Source\Repos\MyMovies\MyMoviesWPF\obj\Debug\net6.0-windows\MyMoviesWPF.csproj.AssemblyReference.cache
 C:\Users\gr602_horse\Source\Repos\MyMovies\MyMoviesWPF\obj\Debug\net6.0-windows\Dictionary_1.baml
 C:\Users\gr602_horse\Source\Repos\MyMovies\MyMoviesWPF\obj\Debug\net6.0-windows\MainWindow.g.cs
-C:\Users\gr602_horse\Source\Repos\MyMovies\MyMoviesWPF\obj\Debug\net6.0-windows\MVVM\View\Catalog.g.cs
 C:\Users\gr602_horse\Source\Repos\MyMovies\MyMoviesWPF\obj\Debug\net6.0-windows\MVVM\View\Controls\UserView.g.cs
 C:\Users\gr602_horse\Source\Repos\MyMovies\MyMoviesWPF\obj\Debug\net6.0-windows\MVVM\View\LogInControl.g.cs
-C:\Users\gr602_horse\Source\Repos\MyMovies\MyMoviesWPF\obj\Debug\net6.0-windows\MVVM\View\MovieView.g.cs
 C:\Users\gr602_horse\Source\Repos\MyMovies\MyMoviesWPF\obj\Debug\net6.0-windows\MVVM\View\UserInit\LogInView.g.cs
 C:\Users\gr602_horse\Source\Repos\MyMovies\MyMoviesWPF\obj\Debug\net6.0-windows\MVVM\View\UserInit\SignUpView.g.cs
 C:\Users\gr602_horse\Source\Repos\MyMovies\MyMoviesWPF\obj\Debug\net6.0-windows\App.g.cs
@@ -283,10 +281,8 @@ C:\Users\gr602_horse\source\repos\MyMovies\MyMoviesWPF\obj\Debug\net6.0-windows\
 C:\Users\gr602_horse\Source\Repos\MyMovies\MyMoviesWPF\obj\Debug\net6.0-windows\MyMoviesWPF_MarkupCompile.lref
 C:\Users\gr602_horse\Source\Repos\MyMovies\MyMoviesWPF\obj\Debug\net6.0-windows\App.baml
 C:\Users\gr602_horse\Source\Repos\MyMovies\MyMoviesWPF\obj\Debug\net6.0-windows\MainWindow.baml
-C:\Users\gr602_horse\Source\Repos\MyMovies\MyMoviesWPF\obj\Debug\net6.0-windows\MVVM\View\Catalog.baml
 C:\Users\gr602_horse\Source\Repos\MyMovies\MyMoviesWPF\obj\Debug\net6.0-windows\MVVM\View\Controls\UserView.baml
 C:\Users\gr602_horse\Source\Repos\MyMovies\MyMoviesWPF\obj\Debug\net6.0-windows\MVVM\View\LogInControl.baml
-C:\Users\gr602_horse\Source\Repos\MyMovies\MyMoviesWPF\obj\Debug\net6.0-windows\MVVM\View\MovieView.baml
 C:\Users\gr602_horse\Source\Repos\MyMovies\MyMoviesWPF\obj\Debug\net6.0-windows\MVVM\View\UserInit\LogInView.baml
 C:\Users\gr602_horse\Source\Repos\MyMovies\MyMoviesWPF\obj\Debug\net6.0-windows\MVVM\View\UserInit\SignUpView.baml
 C:\Users\gr602_horse\Source\Repos\MyMovies\MyMoviesWPF\obj\Debug\net6.0-windows\MVVM\View\Pages\CatalogPage.g.cs
