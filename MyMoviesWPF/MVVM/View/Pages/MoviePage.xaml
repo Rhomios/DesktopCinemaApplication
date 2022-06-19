@@ -44,7 +44,7 @@
 
         </StackPanel>
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Right"  VerticalAlignment="Bottom" Grid.Column="1" Height="75" Width="400" Margin="0,0,54,0">
-            <Button Height="75" Width="200" Content="В корзину"/>
+            <Button Height="75" Width="200" Content="В корзину" Command="{Binding AddToCart}"/>
             <Button Height="75" Width="200" Content="Отмена"/>
 
         </StackPanel>

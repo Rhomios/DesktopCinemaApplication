@@ -18,6 +18,7 @@
             <RowDefinition Height="11*"/>
         </Grid.RowDefinitions>
 
-        <Frame Grid.Column="1" Content="{Binding CurrentPage}" Margin="0,2,0,0" Grid.Row="1"/>
+        <Frame Grid.Column="1" Content="{Binding CurrentPage}" Grid.Row="1"/>
+        <Button Grid.Column="2" Content="{Binding Cart}" HorizontalAlignment="Center" VerticalAlignment="Bottom" Command="{Binding OpenCart}"/>
     </Grid>
 </Window>

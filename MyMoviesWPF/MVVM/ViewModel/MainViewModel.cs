@@ -5,11 +5,14 @@ using MvvmHelpers.Commands;
 using MyMoviesWPF.MVVM.View.Pages;
 using MyMoviesWPF.MVVM.ViewModel.Core;
 
+
 namespace MyMoviesWPF.MVVM.ViewModel
 {
     public class MainViewModel : BaseViewModel
     {
+        private string str;
 
+        private RelayCommand _openCart;
         public Page _currentPage;
         public Page CurrentPage
         {
@@ -21,6 +24,23 @@ namespace MyMoviesWPF.MVVM.ViewModel
 
                 _currentPage = value;
                 OnPropertyChanged("CurrentPage");
+            }
+        }
+        public string Cart
+        {
+            get { return str; }
+            set
+            {            
+                if (Service.CartMoviesCollection.Count > 0)
+                {
+                    str = "Корзина(" + (Service.CartMoviesCollection.Count) + ')';                    
+                }
+                else
+                {
+                    str = "Корзина";
+                }
+                str = value;
+                OnPropertyChanged("Cart");
             }
         }
 
@@ -40,6 +60,20 @@ namespace MyMoviesWPF.MVVM.ViewModel
             OnPropertyChanged("CurrentPage");
         }
 
+
+        public RelayCommand OpenCart
+        {
+            get
+            {
+                return _openCart
+                  ?? (_openCart = new RelayCommand(
+                    async () =>
+                    {
+                        CartPage page = new CartPage();
+                        UpdatePage(page);
+                    }));
+            }
+        }
 
 
 

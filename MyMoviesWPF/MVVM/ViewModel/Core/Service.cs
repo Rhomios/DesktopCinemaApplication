@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Windows.Controls;
@@ -11,6 +12,7 @@ namespace MyMoviesWPF.MVVM.ViewModel.Core
     {
         public static MyMoviesDBContext db = new MyMoviesDBContext();
 
+        public static ObservableCollection<Movie> CartMoviesCollection { get; set; } = new ObservableCollection<Movie>();
         public static MainViewModel MainViewModel { get; set; }
         public static Movie movie { get; set; }
 

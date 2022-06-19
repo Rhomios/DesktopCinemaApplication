@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "8odytpFR2TWB+SsxdxxIvfadPHwbUHGLCdhLOinGXyjuaEer3w5wZZTGUvoBUSx7F55FvMlOSjPbiVhepcimLw==",
+  "dgSpecHash": "752bUnYQt1YEJGXAB/GZ4B2qduS1vhXSLHesS4lgGj+x9IalxNj1QbXr0RIzfkeBHPiCijwrIeaFKqnR9f9jZw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\gr602_horse\\source\\repos\\MyMovies\\MyMoviesWPF\\MyMoviesWPF.csproj",
+  "projectFilePath": "C:\\Users\\gr602_horse\\Source\\Repos\\MyMovies\\MyMoviesWPF\\MyMoviesWPF.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\gr602_horse\\.nuget\\packages\\controlzex\\4.3.0\\controlzex.4.3.0.nupkg.sha512",
     "C:\\Users\\gr602_horse\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",

@@ -289,3 +289,5 @@ C:\Users\gr602_horse\Source\Repos\MyMovies\MyMoviesWPF\obj\Debug\net6.0-windows\
 C:\Users\gr602_horse\Source\Repos\MyMovies\MyMoviesWPF\obj\Debug\net6.0-windows\MVVM\View\Pages\MoviePage.g.cs
 C:\Users\gr602_horse\Source\Repos\MyMovies\MyMoviesWPF\obj\Debug\net6.0-windows\MVVM\View\Pages\CatalogPage.baml
 C:\Users\gr602_horse\Source\Repos\MyMovies\MyMoviesWPF\obj\Debug\net6.0-windows\MVVM\View\Pages\MoviePage.baml
+C:\Users\gr602_horse\Source\Repos\MyMovies\MyMoviesWPF\obj\Debug\net6.0-windows\MVVM\View\Pages\CartPage.g.cs
+C:\Users\gr602_horse\Source\Repos\MyMovies\MyMoviesWPF\obj\Debug\net6.0-windows\MVVM\View\Pages\CartPage.baml

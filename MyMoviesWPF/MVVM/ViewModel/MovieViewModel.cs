@@ -1,18 +1,21 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Core;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Toolkit.Mvvm.Input;
 using MyMoviesWPF.Models;
 using MyMoviesWPF.MVVM.ViewModel.Core;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Windows;
+using System.Windows.Controls;
 
 namespace MyMoviesWPF.MVVM.ViewModel
 {
     public class MovieViewModel : BaseViewModel
     {
         private ObservableCollection<ActorList> _actors;
+        private RelayCommand _addToCart;
         public string Name { get => Service.movie.Name; }
         public string Description { get => Service.movie.Description; }
         public Genre Genre { get => Service.db.Genres.Where(g => g.Idgenre == Service.movie.Idgenre).FirstOrDefault(); }
@@ -33,6 +36,21 @@ namespace MyMoviesWPF.MVVM.ViewModel
         {
             ActorsCollection = new(Service.db.ActorLists.Where(o => o.ListNum == Service.movie.IdactorList).Include(q => q.IdactorNavigation));
         }
+
+        public RelayCommand AddToCart
+        {
+            get
+            {
+                return _addToCart
+                  ?? (_addToCart = new RelayCommand(
+                    async () =>
+                    {
+                        MessageBox.Show("Фильм успешно добавлен в корзину !", "Успех", MessageBoxButton.OK, MessageBoxImage.Information);
+                        Service.CartMoviesCollection.Add(Service.movie);
+                    }));
+            }
+        }
+
 
 
     }
