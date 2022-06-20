@@ -8,10 +8,7 @@ namespace MyMoviesWPF
         public Movie()
         {
             Catalogs = new HashSet<Catalog>();
-        }
-        public Movie(Microsoft.EntityFrameworkCore.Query.IIncludableQueryable<Movie, string> includableQueryable)
-        {
-            Catalogs = new HashSet<Catalog>();
+            Orders = new HashSet<Order>();
         }
 
         public int Idmovie { get; set; }
@@ -22,13 +19,12 @@ namespace MyMoviesWPF
         public int? IdactorList { get; set; }
         public string? Description { get; set; }
         public decimal Price { get; set; }
-        public int? Idorder { get; set; }
         public string? Trailer { get; set; }
         public string? Image { get; set; }
+        public string? Full { get; set; }
 
-        //public virtual ActorList? IdactorListNavigation { get; set; }
         public virtual Genre? IdgenreNavigation { get; set; }
-        public virtual Order? IdorderNavigation { get; set; }
         public virtual ICollection<Catalog> Catalogs { get; set; }
+        public virtual ICollection<Order> Orders { get; set; }
     }
 }

@@ -1,4 +1,6 @@
-﻿using System.Windows.Controls;
+﻿using System.Collections.ObjectModel;
+using System.Linq;
+using System.Windows.Controls;
 using Microsoft.Toolkit.Mvvm.Input;
 using MvvmHelpers;
 using MvvmHelpers.Commands;
@@ -11,6 +13,8 @@ namespace MyMoviesWPF.MVVM.ViewModel
     public class MainViewModel : BaseViewModel
     {
         private string str;
+
+        ObservableCollection<User> user = new ObservableCollection<User>(Service.db.Users.ToList());
 
         private RelayCommand _openCart;
         public Page _currentPage;
@@ -44,6 +48,7 @@ namespace MyMoviesWPF.MVVM.ViewModel
 
         public MainViewModel()
         {
+            Service.LoggedUser = user[0];
             UpdateCartStr();
             Service.MainViewModel = this;
             _currentPage = new CatalogPage();
@@ -83,40 +88,6 @@ namespace MyMoviesWPF.MVVM.ViewModel
                     }));
             }
         }
-
-
-
-
-
-
-
-
-
-        //UserViewModel _userViewModel = new UserViewModel();
-
-        //private BaseViewModel _toolbar = new UserViewModel();
-        //private BaseViewModel _view    = new CatalogViewModel();
-
-
-        //public BaseViewModel CurrentToolbar
-        //{
-        //    get { return _toolbar; }
-        //    set
-        //    {
-        //        _toolbar = value;
-        //        OnPropertyChanged();
-        //    }
-        //}
-        //public BaseViewModel CurrentView
-        //{
-        //    get { return _view; }
-        //    set
-        //    {
-        //        _view = value;
-        //        OnPropertyChanged();
-        //    }
-        //}
-
 
     }
 }

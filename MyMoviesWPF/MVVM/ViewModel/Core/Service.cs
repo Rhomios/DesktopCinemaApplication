@@ -12,6 +12,7 @@ namespace MyMoviesWPF.MVVM.ViewModel.Core
     {
         public static MyMoviesDBContext db = new MyMoviesDBContext();
 
+        public static User LoggedUser = new User();
         public static ObservableCollection<Movie> CartMoviesCollection { get; set; } = new ObservableCollection<Movie>();
         public static MainViewModel MainViewModel { get; set; }
         public static Movie movie { get; set; }

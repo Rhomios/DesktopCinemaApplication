@@ -56,6 +56,8 @@ namespace MyMoviesWPF.Models
 
                 entity.ToTable("ActorList");
 
+                entity.HasIndex(e => e.Idactor, "IX_ActorList_IDActor");
+
                 entity.Property(e => e.IdactorList).HasColumnName("IDActorList");
 
                 entity.Property(e => e.Idactor).HasColumnName("IDActor");
@@ -70,6 +72,8 @@ namespace MyMoviesWPF.Models
             modelBuilder.Entity<Catalog>(entity =>
             {
                 entity.ToTable("Catalog");
+
+                entity.HasIndex(e => e.Idmovie, "IX_Catalog_IDMovie");
 
                 entity.Property(e => e.CatalogId).HasColumnName("CatalogID");
 
@@ -99,6 +103,8 @@ namespace MyMoviesWPF.Models
 
                 entity.ToTable("Movie");
 
+                entity.HasIndex(e => e.Idgenre, "IX_Movie_IDGenre");
+
                 entity.Property(e => e.Idmovie).HasColumnName("IDMovie");
 
                 entity.Property(e => e.Description).HasMaxLength(200);
@@ -106,10 +112,6 @@ namespace MyMoviesWPF.Models
                 entity.Property(e => e.IdactorList).HasColumnName("IDActorList");
 
                 entity.Property(e => e.Idgenre).HasColumnName("IDGenre");
-
-                entity.Property(e => e.Idorder).HasColumnName("IDOrder");
-
-                entity.Property(e => e.Image).HasMaxLength(255);
 
                 entity.Property(e => e.Languages).HasMaxLength(100);
 
@@ -119,22 +121,10 @@ namespace MyMoviesWPF.Models
 
                 entity.Property(e => e.ProductYear).HasColumnType("date");
 
-                entity.Property(e => e.Trailer).HasMaxLength(255);
-
-                //entity.HasOne(d => d.IdactorListNavigation)
-                //    .WithMany(p => p.Movies)
-                //    .HasForeignKey(d => d.IdactorList)
-                //    .HasConstraintName("FK_Movie_ActorList");
-
                 entity.HasOne(d => d.IdgenreNavigation)
                     .WithMany(p => p.Movies)
                     .HasForeignKey(d => d.Idgenre)
                     .HasConstraintName("FK_Movie_Genres1");
-
-                entity.HasOne(d => d.IdorderNavigation)
-                    .WithMany(p => p.Movies)
-                    .HasForeignKey(d => d.Idorder)
-                    .HasConstraintName("FK_Movie_Order");
             });
 
             modelBuilder.Entity<Order>(entity =>
@@ -143,9 +133,15 @@ namespace MyMoviesWPF.Models
 
                 entity.ToTable("Order");
 
+                entity.HasIndex(e => e.Idpayment, "IX_Order_IDPayment");
+
+                entity.HasIndex(e => e.Iduser, "IX_Order_IDUser");
+
                 entity.Property(e => e.Idorder).HasColumnName("IDOrder");
 
                 entity.Property(e => e.Date).HasColumnType("date");
+
+                entity.Property(e => e.Idmovie).HasColumnName("IDMovie");
 
                 entity.Property(e => e.Idpayment).HasColumnName("IDPayment");
 
@@ -154,6 +150,11 @@ namespace MyMoviesWPF.Models
                 entity.Property(e => e.Price).HasColumnType("money");
 
                 entity.Property(e => e.Status).HasMaxLength(50);
+
+                entity.HasOne(d => d.IdmovieNavigation)
+                    .WithMany(p => p.Orders)
+                    .HasForeignKey(d => d.Idmovie)
+                    .HasConstraintName("FK_Order_Movie");
 
                 entity.HasOne(d => d.IdpaymentNavigation)
                     .WithMany(p => p.Orders)
@@ -214,3 +215,4 @@ namespace MyMoviesWPF.Models
         partial void OnModelCreatingPartial(ModelBuilder modelBuilder);
     }
 }
+
