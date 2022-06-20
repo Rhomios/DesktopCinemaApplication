@@ -24,10 +24,10 @@
                 HorizontalAlignment="Center" VerticalAlignment="Center"
                 Grid.Row="1" Grid.Column="1" Height="75" Width="250"/>
         <Button Content="Отмена" 
-                HorizontalAlignment="Left" VerticalAlignment="Center"
-                Grid.Row="1" Grid.Column="2" Height="75" Width="250" Margin="898,0,0,0"/>
-        <DataGrid d:ItemsSource="{d:SampleData ItemCount=5}" Grid.Column="1"/>
-        <DataGrid ItemsSource="{Binding MoviesCollection}" SelectedItem="{Binding OpenMovieWindow}" HeadersVisibility="None"
+                HorizontalAlignment="Right" VerticalAlignment="Center"
+                Grid.Row="1" Grid.Column="2" Height="75" Width="250" />
+        <DataGrid ItemsSource="{Binding CartMoviesCollection}" Grid.Column="1"/>
+        <DataGrid ItemsSource="{Binding CartMoviesCollection}" SelectedItem="{Binding OpenMovieWindow}" HeadersVisibility="None"
                     Grid.Column="2" IsReadOnly="True" AutoGenerateColumns="False" BorderBrush = "Transparent" Background = "Transparent" RowBackground = "Transparent">
             <DataGrid.LayoutTransform>
                 <TransformGroup>

@@ -174,17 +174,13 @@ C:\Users\Rhomaios\Source\Repos\MyMovies\MyMoviesWPF\bin\Debug\net6.0-windows\run
 C:\Users\Rhomaios\Source\Repos\MyMovies\MyMoviesWPF\obj\Debug\net6.0-windows\MyMoviesWPF.csproj.AssemblyReference.cache
 C:\Users\Rhomaios\Source\Repos\MyMovies\MyMoviesWPF\obj\Debug\net6.0-windows\Dictionary_1.baml
 C:\Users\Rhomaios\Source\Repos\MyMovies\MyMoviesWPF\obj\Debug\net6.0-windows\MainWindow.g.cs
-C:\Users\Rhomaios\Source\Repos\MyMovies\MyMoviesWPF\obj\Debug\net6.0-windows\MVVM\View\Catalog.g.cs
 C:\Users\Rhomaios\Source\Repos\MyMovies\MyMoviesWPF\obj\Debug\net6.0-windows\MVVM\View\LogInControl.g.cs
-C:\Users\Rhomaios\Source\Repos\MyMovies\MyMoviesWPF\obj\Debug\net6.0-windows\MVVM\View\Movie.g.cs
 C:\Users\Rhomaios\Source\Repos\MyMovies\MyMoviesWPF\obj\Debug\net6.0-windows\App.g.cs
 C:\Users\Rhomaios\Source\Repos\MyMovies\MyMoviesWPF\obj\Debug\net6.0-windows\MyMoviesWPF_MarkupCompile.cache
 C:\Users\Rhomaios\Source\Repos\MyMovies\MyMoviesWPF\obj\Debug\net6.0-windows\MyMoviesWPF_MarkupCompile.lref
 C:\Users\Rhomaios\Source\Repos\MyMovies\MyMoviesWPF\obj\Debug\net6.0-windows\App.baml
 C:\Users\Rhomaios\Source\Repos\MyMovies\MyMoviesWPF\obj\Debug\net6.0-windows\MainWindow.baml
-C:\Users\Rhomaios\Source\Repos\MyMovies\MyMoviesWPF\obj\Debug\net6.0-windows\MVVM\View\Catalog.baml
 C:\Users\Rhomaios\Source\Repos\MyMovies\MyMoviesWPF\obj\Debug\net6.0-windows\MVVM\View\LogInControl.baml
-C:\Users\Rhomaios\Source\Repos\MyMovies\MyMoviesWPF\obj\Debug\net6.0-windows\MVVM\View\Movie.baml
 C:\Users\Rhomaios\Source\Repos\MyMovies\MyMoviesWPF\obj\Debug\net6.0-windows\MyMoviesWPF.g.resources
 C:\Users\Rhomaios\Source\Repos\MyMovies\MyMoviesWPF\obj\Debug\net6.0-windows\MyMoviesWPF.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Rhomaios\Source\Repos\MyMovies\MyMoviesWPF\obj\Debug\net6.0-windows\MyMoviesWPF.AssemblyInfoInputs.cache
@@ -291,3 +287,9 @@ C:\Users\gr602_horse\Source\Repos\MyMovies\MyMoviesWPF\obj\Debug\net6.0-windows\
 C:\Users\gr602_horse\Source\Repos\MyMovies\MyMoviesWPF\obj\Debug\net6.0-windows\MVVM\View\Pages\MoviePage.baml
 C:\Users\gr602_horse\Source\Repos\MyMovies\MyMoviesWPF\obj\Debug\net6.0-windows\MVVM\View\Pages\CartPage.g.cs
 C:\Users\gr602_horse\Source\Repos\MyMovies\MyMoviesWPF\obj\Debug\net6.0-windows\MVVM\View\Pages\CartPage.baml
+C:\Users\Rhomaios\Source\Repos\MyMovies\MyMoviesWPF\obj\Debug\net6.0-windows\MVVM\View\Pages\CartPage.g.cs
+C:\Users\Rhomaios\Source\Repos\MyMovies\MyMoviesWPF\obj\Debug\net6.0-windows\MVVM\View\Pages\CatalogPage.g.cs
+C:\Users\Rhomaios\Source\Repos\MyMovies\MyMoviesWPF\obj\Debug\net6.0-windows\MVVM\View\Pages\MoviePage.g.cs
+C:\Users\Rhomaios\Source\Repos\MyMovies\MyMoviesWPF\obj\Debug\net6.0-windows\MVVM\View\Pages\CartPage.baml
+C:\Users\Rhomaios\Source\Repos\MyMovies\MyMoviesWPF\obj\Debug\net6.0-windows\MVVM\View\Pages\CatalogPage.baml
+C:\Users\Rhomaios\Source\Repos\MyMovies\MyMoviesWPF\obj\Debug\net6.0-windows\MVVM\View\Pages\MoviePage.baml

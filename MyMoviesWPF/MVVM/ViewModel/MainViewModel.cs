@@ -28,17 +28,22 @@ namespace MyMoviesWPF.MVVM.ViewModel
         }
         public string Cart
         {
-            get { return str; }
-            set
-            {            
+            get 
+            {
                 if (Service.CartMoviesCollection.Count > 0)
                 {
-                    str = "Корзина(" + (Service.CartMoviesCollection.Count) + ')';                    
+                    str = "Корзина(" + (Service.CartMoviesCollection.Count) + ')';
                 }
                 else
                 {
                     str = "Корзина";
                 }
+                return str; 
+            }
+            set
+            {
+                if (str == value)
+                    return;
                 str = value;
                 OnPropertyChanged("Cart");
             }
@@ -49,6 +54,9 @@ namespace MyMoviesWPF.MVVM.ViewModel
         {
             Service.MainViewModel = this;
             _currentPage = new CatalogPage();
+
+
+
 
         }
 
