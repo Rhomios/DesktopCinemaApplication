@@ -30,14 +30,6 @@ namespace MyMoviesWPF.MVVM.ViewModel
         {
             get 
             {
-                if (Service.CartMoviesCollection.Count > 0)
-                {
-                    str = "Корзина(" + (Service.CartMoviesCollection.Count) + ')';
-                }
-                else
-                {
-                    str = "Корзина";
-                }
                 return str; 
             }
             set
@@ -52,12 +44,9 @@ namespace MyMoviesWPF.MVVM.ViewModel
 
         public MainViewModel()
         {
+            UpdateCartStr();
             Service.MainViewModel = this;
             _currentPage = new CatalogPage();
-
-
-
-
         }
 
 
@@ -68,7 +57,19 @@ namespace MyMoviesWPF.MVVM.ViewModel
             OnPropertyChanged("CurrentPage");
         }
 
-
+        
+        public void UpdateCartStr()
+        {
+            if (Service.CartMoviesCollection.Count > 0)
+            {
+                str = "Корзина(" + (Service.CartMoviesCollection.Count) + ')';
+            }
+            else
+            {
+                str = "Корзина";
+            }
+            OnPropertyChanged("Cart");
+        }
         public RelayCommand OpenCart
         {
             get

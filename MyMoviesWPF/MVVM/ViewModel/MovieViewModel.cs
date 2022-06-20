@@ -45,8 +45,9 @@ namespace MyMoviesWPF.MVVM.ViewModel
                   ?? (_addToCart = new RelayCommand(
                     async () =>
                     {
-                        MessageBox.Show("Фильм успешно добавлен в корзину !", "Успех", MessageBoxButton.OK, MessageBoxImage.Information);
+                        MessageBox.Show("Фильм успешно добавлен в корзину !", "Успех", MessageBoxButton.OK, MessageBoxImage.Information);               
                         Service.CartMoviesCollection.Add(Service.movie);
+                        Service.MainViewModel.UpdateCartStr();
                     }));
             }
         }

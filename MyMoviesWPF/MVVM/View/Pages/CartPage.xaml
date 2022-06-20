@@ -26,8 +26,8 @@
         <Button Content="Отмена" 
                 HorizontalAlignment="Right" VerticalAlignment="Center"
                 Grid.Row="1" Grid.Column="2" Height="75" Width="250" />
-        <DataGrid ItemsSource="{Binding CartMoviesCollection}" Grid.Column="1"/>
-        <DataGrid ItemsSource="{Binding CartMoviesCollection}" SelectedItem="{Binding OpenMovieWindow}" HeadersVisibility="None"
+        <DataGrid ItemsSource="{Binding CartMoviesCollection}" SelectedItem="{Binding RemoveMovie}" Grid.Column="1" IsReadOnly="True"/>
+        <DataGrid ItemsSource="{Binding CartMoviesCollection}" HeadersVisibility="None"
                     Grid.Column="2" IsReadOnly="True" AutoGenerateColumns="False" BorderBrush = "Transparent" Background = "Transparent" RowBackground = "Transparent">
             <DataGrid.LayoutTransform>
                 <TransformGroup>
