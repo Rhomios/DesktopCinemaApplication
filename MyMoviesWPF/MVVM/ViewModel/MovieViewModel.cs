@@ -17,6 +17,8 @@ namespace MyMoviesWPF.MVVM.ViewModel
         private ObservableCollection<ActorList> _actors;
         private RelayCommand _addToCart;
         private RelayCommand _cancel;
+        private RelayCommand _update;
+
         private bool _addToCartEnability = true;
         private Order _orders;
         public string Name { get => Service.movie.Name; }
@@ -36,6 +38,19 @@ namespace MyMoviesWPF.MVVM.ViewModel
             }
         }
 
+        
+        public RelayCommand Update
+        {
+            get
+            {
+                return _update
+                  ?? (_update = new RelayCommand(
+                    async () =>
+                    {
+                        UpdateEnability();
+                    }));
+            }
+        }
         public RelayCommand Cancel
         {
             get
@@ -64,10 +79,6 @@ namespace MyMoviesWPF.MVVM.ViewModel
                 {
 
                     UpdateEnability(false);
-                }
-                else
-                {
-                    UpdateEnability(true);
                 }
 
             }

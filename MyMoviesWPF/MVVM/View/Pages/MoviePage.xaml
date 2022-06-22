@@ -13,13 +13,17 @@
             <ColumnDefinition Width="187*"/>
 
         </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="67*"/>
+            <RowDefinition Height="8*"/>
+        </Grid.RowDefinitions>
         <StackPanel Margin="85,8,725,4">
             <Image HorizontalAlignment="Left" Margin="117,10,0,0" VerticalAlignment="Top"/>
         </StackPanel>
 
 
 
-        <StackPanel Orientation="Vertical" HorizontalAlignment="Left"  VerticalAlignment="Top" >
+        <StackPanel Orientation="Vertical" HorizontalAlignment="Center"  VerticalAlignment="Top" Height="161" Width="852" >
             <StackPanel Orientation="Horizontal">
                 <TextBlock TextWrapping="Wrap" Text="Жанр: " FontSize="20"/>
                 <TextBlock TextWrapping="Wrap" Text="{Binding Genre.Name}" VerticalAlignment="Bottom"/>
@@ -40,18 +44,20 @@
             <StackPanel Orientation="Vertical">
                 <TextBlock TextWrapping="Wrap" Text="Цена: "/>
                 <TextBlock TextWrapping="Wrap" Text="{Binding Price}" HorizontalAlignment="Left" FontSize="20"/>
-            </StackPanel>            
+            </StackPanel>
 
         </StackPanel>
-        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right"  VerticalAlignment="Bottom" Grid.Column="1" Height="75" Width="400" Margin="0,0,54,0">
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right"  VerticalAlignment="Bottom" Grid.Column="1" Grid.Row="1" Height="75" Width="400" Margin="0,0,54,0">
             <Button Height="75" Width="200" Content="В корзину" Command="{Binding AddToCart}" IsEnabled="{Binding AddToCartEnability}" Margin="5, 0, 0, 0"/>
             <Button Height="75" Width="200" Content="Отмена" Margin="5, 0, 0, 0 " Command="{Binding Cancel}"/>
 
         </StackPanel>
-        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Top" Grid.Column="1">
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="1" Height="770" Width="512">
+            <Button Content="Обновить" Command="{Binding Update}" Cursor="Hand"/>
             <MediaElement Height="512" Source="{Binding TrailerURL}" Name="mePlayer" Stretch="Uniform"  />
             <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="{Binding Name}" VerticalAlignment="Top" FontSize="20"/>
-            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="{Binding Description}" VerticalAlignment="Top" FontSize="16"/>
+            <TextBox AcceptsReturn="True" VerticalScrollBarVisibility="Auto" TextWrapping="Wrap" Width="512" Height="200" FontSize="14" Text="{Binding Description, Mode=OneWay}" Cursor="Arrow" IsReadOnly="True"/>
+
 
         </StackPanel>
     </Grid>

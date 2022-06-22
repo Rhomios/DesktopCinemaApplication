@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-C:\Users\Rhomaios\source\repos\MyMovies\MyMoviesWPF\obj\Debug\net6.0-windows\
+C:\Users\gr602_horse\Source\Repos\MyMovies\MyMoviesWPF\obj\Debug\net6.0-windows\
 MyMoviesWPF
 none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
-C:\Users\Rhomaios\source\repos\MyMovies\MyMoviesWPF\App.xaml
+C:\Users\gr602_horse\Source\Repos\MyMovies\MyMoviesWPF\App.xaml
 91698351995
 
 32-895125016
-2241283754979
+224-1373415498
 Dictionary_1.xaml;MVVM\View\Controls\UserView.xaml;MVVM\View\LogInControl.xaml;MVVM\View\LogInView.xaml;MVVM\View\MainWindow.xaml;MVVM\View\Pages\CartPage.xaml;MVVM\View\Pages\CatalogPage.xaml;MVVM\View\Pages\MoviePage.xaml;MVVM\View\Pages\OrderPage.xaml;
 
 True

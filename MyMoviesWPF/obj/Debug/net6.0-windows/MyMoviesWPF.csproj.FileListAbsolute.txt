@@ -249,13 +249,9 @@ C:\Users\gr602_horse\Source\Repos\MyMovies\MyMoviesWPF\bin\Debug\net6.0-windows\
 C:\Users\gr602_horse\Source\Repos\MyMovies\MyMoviesWPF\bin\Debug\net6.0-windows\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
 C:\Users\gr602_horse\Source\Repos\MyMovies\MyMoviesWPF\obj\Debug\net6.0-windows\MyMoviesWPF.csproj.AssemblyReference.cache
 C:\Users\gr602_horse\Source\Repos\MyMovies\MyMoviesWPF\obj\Debug\net6.0-windows\Dictionary_1.baml
-C:\Users\gr602_horse\Source\Repos\MyMovies\MyMoviesWPF\obj\Debug\net6.0-windows\MainWindow.g.cs
 C:\Users\gr602_horse\Source\Repos\MyMovies\MyMoviesWPF\obj\Debug\net6.0-windows\MVVM\View\Controls\UserView.g.cs
 C:\Users\gr602_horse\Source\Repos\MyMovies\MyMoviesWPF\obj\Debug\net6.0-windows\MVVM\View\LogInControl.g.cs
-C:\Users\gr602_horse\Source\Repos\MyMovies\MyMoviesWPF\obj\Debug\net6.0-windows\MVVM\View\UserInit\LogInView.g.cs
-C:\Users\gr602_horse\Source\Repos\MyMovies\MyMoviesWPF\obj\Debug\net6.0-windows\MVVM\View\UserInit\SignUpView.g.cs
 C:\Users\gr602_horse\Source\Repos\MyMovies\MyMoviesWPF\obj\Debug\net6.0-windows\App.g.cs
-C:\Users\gr602_horse\Source\Repos\MyMovies\MyMoviesWPF\obj\Debug\net6.0-windows\GeneratedInternalTypeHelper.g.cs
 C:\Users\gr602_horse\Source\Repos\MyMovies\MyMoviesWPF\obj\Debug\net6.0-windows\MyMoviesWPF_MarkupCompile.cache
 C:\Users\gr602_horse\Source\Repos\MyMovies\MyMoviesWPF\obj\Debug\net6.0-windows\MyMoviesWPF.g.resources
 C:\Users\gr602_horse\Source\Repos\MyMovies\MyMoviesWPF\obj\Debug\net6.0-windows\MyMoviesWPF.GeneratedMSBuildEditorConfig.editorconfig
@@ -269,11 +265,8 @@ C:\Users\gr602_horse\Source\Repos\MyMovies\MyMoviesWPF\obj\Debug\net6.0-windows\
 C:\Users\gr602_horse\source\repos\MyMovies\MyMoviesWPF\obj\Debug\net6.0-windows\MyMoviesWPF.genruntimeconfig.cache
 C:\Users\gr602_horse\Source\Repos\MyMovies\MyMoviesWPF\obj\Debug\net6.0-windows\MyMoviesWPF_MarkupCompile.lref
 C:\Users\gr602_horse\Source\Repos\MyMovies\MyMoviesWPF\obj\Debug\net6.0-windows\App.baml
-C:\Users\gr602_horse\Source\Repos\MyMovies\MyMoviesWPF\obj\Debug\net6.0-windows\MainWindow.baml
 C:\Users\gr602_horse\Source\Repos\MyMovies\MyMoviesWPF\obj\Debug\net6.0-windows\MVVM\View\Controls\UserView.baml
 C:\Users\gr602_horse\Source\Repos\MyMovies\MyMoviesWPF\obj\Debug\net6.0-windows\MVVM\View\LogInControl.baml
-C:\Users\gr602_horse\Source\Repos\MyMovies\MyMoviesWPF\obj\Debug\net6.0-windows\MVVM\View\UserInit\LogInView.baml
-C:\Users\gr602_horse\Source\Repos\MyMovies\MyMoviesWPF\obj\Debug\net6.0-windows\MVVM\View\UserInit\SignUpView.baml
 C:\Users\gr602_horse\Source\Repos\MyMovies\MyMoviesWPF\obj\Debug\net6.0-windows\MVVM\View\Pages\CatalogPage.g.cs
 C:\Users\gr602_horse\Source\Repos\MyMovies\MyMoviesWPF\obj\Debug\net6.0-windows\MVVM\View\Pages\MoviePage.g.cs
 C:\Users\gr602_horse\Source\Repos\MyMovies\MyMoviesWPF\obj\Debug\net6.0-windows\MVVM\View\Pages\CatalogPage.baml
@@ -293,3 +286,10 @@ C:\Users\Rhomaios\source\repos\MyMovies\MyMoviesWPF\obj\Debug\net6.0-windows\MVV
 C:\Users\Rhomaios\source\repos\MyMovies\MyMoviesWPF\obj\Debug\net6.0-windows\MVVM\View\MainWindow.baml
 C:\Users\Rhomaios\source\repos\MyMovies\MyMoviesWPF\obj\Debug\net6.0-windows\MVVM\View\LogInView.g.cs
 C:\Users\Rhomaios\source\repos\MyMovies\MyMoviesWPF\obj\Debug\net6.0-windows\MVVM\View\LogInView.baml
+C:\Users\gr602_horse\Source\Repos\MyMovies\MyMoviesWPF\obj\Debug\net6.0-windows\MVVM\View\LogInView.g.cs
+C:\Users\gr602_horse\Source\Repos\MyMovies\MyMoviesWPF\obj\Debug\net6.0-windows\MVVM\View\MainWindow.g.cs
+C:\Users\gr602_horse\Source\Repos\MyMovies\MyMoviesWPF\obj\Debug\net6.0-windows\MVVM\View\Pages\OrderPage.g.cs
+C:\Users\gr602_horse\Source\Repos\MyMovies\MyMoviesWPF\obj\Debug\net6.0-windows\MVVM\View\LogInView.baml
+C:\Users\gr602_horse\Source\Repos\MyMovies\MyMoviesWPF\obj\Debug\net6.0-windows\MVVM\View\MainWindow.baml
+C:\Users\gr602_horse\Source\Repos\MyMovies\MyMoviesWPF\obj\Debug\net6.0-windows\MVVM\View\Pages\OrderPage.baml
+C:\Users\gr602_horse\Source\Repos\MyMovies\MyMoviesWPF\bin\Debug\net6.0-windows\DevExpress.Data.v22.1.dll
