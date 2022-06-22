@@ -294,3 +294,5 @@ C:\Users\Rhomaios\Source\Repos\MyMovies\MyMoviesWPF\obj\Debug\net6.0-windows\MVV
 C:\Users\Rhomaios\Source\Repos\MyMovies\MyMoviesWPF\obj\Debug\net6.0-windows\MVVM\View\Pages\CatalogPage.baml
 C:\Users\Rhomaios\Source\Repos\MyMovies\MyMoviesWPF\obj\Debug\net6.0-windows\MVVM\View\Pages\MoviePage.baml
 C:\Users\Rhomaios\source\repos\MyMovies\MyMoviesWPF\bin\Debug\net6.0-windows\DevExpress.Data.v22.1.dll
+C:\Users\Rhomaios\source\repos\MyMovies\MyMoviesWPF\obj\Debug\net6.0-windows\MVVM\View\Pages\OrderPage.g.cs
+C:\Users\Rhomaios\source\repos\MyMovies\MyMoviesWPF\obj\Debug\net6.0-windows\MVVM\View\Pages\OrderPage.baml

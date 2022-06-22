@@ -1,4 +1,5 @@
 ﻿using Microsoft.Toolkit.Mvvm.Input;
+using MyMoviesWPF.MVVM.View.Pages;
 using MyMoviesWPF.MVVM.ViewModel.Core;
 using System;
 using System.Collections.Generic;
@@ -12,6 +13,8 @@ namespace MyMoviesWPF.MVVM.ViewModel
 {
     public class CartPageViewModel : BaseViewModel
     {
+        private RelayCommand _openOrderPage;
+        private RelayCommand _cancel;
         private ObservableCollection<Movie> _cartMoviesCollection;
         private Movie _removeMovie;
         public CartPageViewModel()
@@ -42,7 +45,7 @@ namespace MyMoviesWPF.MVVM.ViewModel
             {
                 if (MessageBox.Show("Вы действительно хотите убрать этот фильм из корзины?",
                 "Confirmation", MessageBoxButton.YesNo) == MessageBoxResult.Yes)
-                {
+                {                   
                     var itemToRemove = Service.CartMoviesCollection.Single(r => r.Idmovie == Service.movie.Idmovie);
                     Service.CartMoviesCollection.Remove(itemToRemove);
                     _cartMoviesCollection = Service.CartMoviesCollection;
@@ -57,6 +60,37 @@ namespace MyMoviesWPF.MVVM.ViewModel
             }
         }
 
+        
+        public RelayCommand Cancel
+        {
+            get
+            {
+                return _cancel
+                  ?? (_cancel = new RelayCommand(
+                    async () =>
+                    {
+                        CartMoviesCollection.Clear();
+                        Service.CartMoviesCollection.Clear();
+                        Service.MainViewModel.UpdateCartStr();
+                        Service.MainViewModel.UpdatePage(Service.catalogPage);
+                    }));
+            }
+        }
 
+        public RelayCommand OpenOrderPage
+        {
+            get
+            {
+                return _openOrderPage
+                  ?? (_openOrderPage = new RelayCommand(
+                    async () =>
+                    {
+                        OrderPage page = new OrderPage();
+                        CartMoviesCollection.Clear();
+                        Service.MainViewModel.UpdateCartStr();
+                        Service.MainViewModel.UpdatePage(page);
+                    }));
+            }
+        }
     }
 }

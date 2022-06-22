@@ -51,7 +51,7 @@ namespace MyMoviesWPF.MVVM.ViewModel
             Service.LoggedUser = user[0];
             UpdateCartStr();
             Service.MainViewModel = this;
-            _currentPage = new CatalogPage();
+            UpdatePage(Service.catalogPage);
         }
 
 
