@@ -7,6 +7,9 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="MVVM\View\LogInView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="MVVM\View\Pages\CartPage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -14,12 +17,6 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="MVVM\View\Pages\MoviePage.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Update="MVVM\View\UserInit\LogInView.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Update="MVVM\View\UserInit\SignUpView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="MVVM\View\Controls\UserView.xaml.cs">
@@ -30,7 +27,10 @@
     <Page Update="Dictionary_1.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="MainWindow.xaml">
+    <Page Update="MVVM\View\LogInView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MVVM\View\MainWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="MVVM\View\Pages\CartPage.xaml">
@@ -40,12 +40,6 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="MVVM\View\Pages\MoviePage.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Update="MVVM\View\UserInit\LogInView.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Update="MVVM\View\UserInit\SignUpView.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="MVVM\View\Controls\UserView.xaml">

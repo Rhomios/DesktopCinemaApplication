@@ -4,7 +4,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using MyMoviesWPF.MVVM.View;
-using MyMoviesWPF.MVVM.View.UserInit;
 
 
 namespace MyMoviesWPF.MVVM.ViewModel
@@ -26,8 +25,8 @@ namespace MyMoviesWPF.MVVM.ViewModel
         {
             get => new RelayCommand<object>(o =>
             {
-                SignUpView view = new SignUpView();
-                view.Show();
+                //SignUpView view = new SignUpView();
+                //view.Show();
 
             }
             );

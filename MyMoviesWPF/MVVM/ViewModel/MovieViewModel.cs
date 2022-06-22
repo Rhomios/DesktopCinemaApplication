@@ -56,10 +56,20 @@ namespace MyMoviesWPF.MVVM.ViewModel
             ActorsCollection = new(Service.db.ActorLists.Where(o => o.ListNum == Service.movie.IdactorList).Include(q => q.IdactorNavigation));
             foreach(Order order in Service.db.Orders)
             {
-                if(order.Idmovie == Service.movie.Idmovie && order.Iduser == Service.LoggedUser.Iduser && order.Status != "Отменен")
+                if (Service.LoggedUser != null)
                 {
                     UpdateEnability(false);
                 }
+                else if(order.Idmovie == Service.movie.Idmovie && order.Iduser == Service.LoggedUser.Iduser && order.Status != "Отменен")
+                {
+
+                    UpdateEnability(false);
+                }
+                else
+                {
+                    UpdateEnability(true);
+                }
+
             }
             
 

@@ -173,13 +173,11 @@ C:\Users\Rhomaios\Source\Repos\MyMovies\MyMoviesWPF\bin\Debug\net6.0-windows\run
 C:\Users\Rhomaios\Source\Repos\MyMovies\MyMoviesWPF\bin\Debug\net6.0-windows\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
 C:\Users\Rhomaios\Source\Repos\MyMovies\MyMoviesWPF\obj\Debug\net6.0-windows\MyMoviesWPF.csproj.AssemblyReference.cache
 C:\Users\Rhomaios\Source\Repos\MyMovies\MyMoviesWPF\obj\Debug\net6.0-windows\Dictionary_1.baml
-C:\Users\Rhomaios\Source\Repos\MyMovies\MyMoviesWPF\obj\Debug\net6.0-windows\MainWindow.g.cs
 C:\Users\Rhomaios\Source\Repos\MyMovies\MyMoviesWPF\obj\Debug\net6.0-windows\MVVM\View\LogInControl.g.cs
 C:\Users\Rhomaios\Source\Repos\MyMovies\MyMoviesWPF\obj\Debug\net6.0-windows\App.g.cs
 C:\Users\Rhomaios\Source\Repos\MyMovies\MyMoviesWPF\obj\Debug\net6.0-windows\MyMoviesWPF_MarkupCompile.cache
 C:\Users\Rhomaios\Source\Repos\MyMovies\MyMoviesWPF\obj\Debug\net6.0-windows\MyMoviesWPF_MarkupCompile.lref
 C:\Users\Rhomaios\Source\Repos\MyMovies\MyMoviesWPF\obj\Debug\net6.0-windows\App.baml
-C:\Users\Rhomaios\Source\Repos\MyMovies\MyMoviesWPF\obj\Debug\net6.0-windows\MainWindow.baml
 C:\Users\Rhomaios\Source\Repos\MyMovies\MyMoviesWPF\obj\Debug\net6.0-windows\MVVM\View\LogInControl.baml
 C:\Users\Rhomaios\Source\Repos\MyMovies\MyMoviesWPF\obj\Debug\net6.0-windows\MyMoviesWPF.g.resources
 C:\Users\Rhomaios\Source\Repos\MyMovies\MyMoviesWPF\obj\Debug\net6.0-windows\MyMoviesWPF.GeneratedMSBuildEditorConfig.editorconfig
@@ -192,11 +190,6 @@ C:\Users\Rhomaios\Source\Repos\MyMovies\MyMoviesWPF\obj\Debug\net6.0-windows\ref
 C:\Users\Rhomaios\Source\Repos\MyMovies\MyMoviesWPF\obj\Debug\net6.0-windows\MyMoviesWPF.pdb
 C:\Users\Rhomaios\Source\Repos\MyMovies\MyMoviesWPF\obj\Debug\net6.0-windows\MyMoviesWPF.genruntimeconfig.cache
 C:\Users\Rhomaios\Source\Repos\MyMovies\MyMoviesWPF\obj\Debug\net6.0-windows\ref\MyMoviesWPF.dll
-C:\Users\Rhomaios\source\repos\MyMovies\MyMoviesWPF\obj\Debug\net6.0-windows\MVVM\View\UserInit\LogInView.g.cs
-C:\Users\Rhomaios\source\repos\MyMovies\MyMoviesWPF\obj\Debug\net6.0-windows\MVVM\View\UserInit\SignUpView.g.cs
-C:\Users\Rhomaios\source\repos\MyMovies\MyMoviesWPF\obj\Debug\net6.0-windows\MVVM\View\UserInit\LogInView.baml
-C:\Users\Rhomaios\source\repos\MyMovies\MyMoviesWPF\obj\Debug\net6.0-windows\MVVM\View\UserInit\SignUpView.baml
-C:\Users\Rhomaios\source\repos\MyMovies\MyMoviesWPF\obj\Debug\net6.0-windows\GeneratedInternalTypeHelper.g.cs
 C:\Users\Rhomaios\source\repos\MyMovies\MyMoviesWPF\obj\Debug\net6.0-windows\MVVM\View\Controls\UserView.g.cs
 C:\Users\Rhomaios\source\repos\MyMovies\MyMoviesWPF\obj\Debug\net6.0-windows\MVVM\View\Controls\UserView.baml
 Z:\УиФИС\MyMovies\MyMoviesWPF\obj\Debug\net6.0-windows\MVVM\View\Controls\UserView.g.cs
@@ -296,3 +289,7 @@ C:\Users\Rhomaios\Source\Repos\MyMovies\MyMoviesWPF\obj\Debug\net6.0-windows\MVV
 C:\Users\Rhomaios\source\repos\MyMovies\MyMoviesWPF\bin\Debug\net6.0-windows\DevExpress.Data.v22.1.dll
 C:\Users\Rhomaios\source\repos\MyMovies\MyMoviesWPF\obj\Debug\net6.0-windows\MVVM\View\Pages\OrderPage.g.cs
 C:\Users\Rhomaios\source\repos\MyMovies\MyMoviesWPF\obj\Debug\net6.0-windows\MVVM\View\Pages\OrderPage.baml
+C:\Users\Rhomaios\source\repos\MyMovies\MyMoviesWPF\obj\Debug\net6.0-windows\MVVM\View\MainWindow.g.cs
+C:\Users\Rhomaios\source\repos\MyMovies\MyMoviesWPF\obj\Debug\net6.0-windows\MVVM\View\MainWindow.baml
+C:\Users\Rhomaios\source\repos\MyMovies\MyMoviesWPF\obj\Debug\net6.0-windows\MVVM\View\LogInView.g.cs
+C:\Users\Rhomaios\source\repos\MyMovies\MyMoviesWPF\obj\Debug\net6.0-windows\MVVM\View\LogInView.baml
